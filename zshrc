@@ -24,13 +24,13 @@ export TERMINAL='alacritty'
 export MANPAGER='nvim +Man!'
 
 ## App launchers
+alias v='nvim'
 alias vi="nvim"
 alias vim="nvim"
 alias reload='source ~/.zshrc'
 alias glog='git log --graph --oneline --decorate --all'
 alias tsm='transmission-remote'
 alias s='startx'
-alias v='nvim'
 alias f='ranger'
 alias tty='tty-clock -C6 -c -t'
 alias pac='sudo pacman'
@@ -45,8 +45,3 @@ alias tmux='tmux -2'
 
 export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
-
-# Prompt Settings
-# PROMPT='%F{blue}%1~%f %F{cyan}∳%f '
-
-# [[ $TERM != "screen" ]] && exec tmux
