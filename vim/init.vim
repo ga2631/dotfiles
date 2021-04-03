@@ -189,3 +189,27 @@ let g:fzf_colors =
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.vue'
 let g:closetag_emptyTags_caseSensitive = 1
 let g:jsx_ext_required = 0
+
+" Short cut for exit vim
+nmap <silent> qq :q!<CR>
+nmap <silent> wq :wq<CR>
+nmap <silent> w :w<CR>
+vmap <silent> qq :q!<CR>
+vmap <silent> wq :wq<CR>
+vmap <silent> w :w<CR>
+
+" Auto close bracket
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+
+" Resize panel
+nnoremap <Up> :resize +2<CR> 
+nnoremap <Down> :resize -2<CR>
+nnoremap <Left> :vertical resize +2<CR>
+nnoremap <Right> :vertical resize -2<CR>
+
+" Apply config
+nnoremap <silent> rr :source ~/.config/nvim/init.vim<CR>

@@ -18,5 +18,6 @@ Plug 'sheerun/vim-polyglot'
 Plug 'honza/vim-snippets'
 Plug 'ervandew/supertab'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'chrisbra/colorizer'
 
 call plug#end()
