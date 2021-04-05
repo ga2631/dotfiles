@@ -151,7 +151,7 @@ let g:lightline = {
       \ 'colorscheme': 'gruvbox',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'cocstatus', 'readonly', 'filename', 'modified' ] ],
+      \             [ 'gitbranch', 'cocstatus', 'readonly', 'absolutepath', 'modified' ] ],
       \   'right': [ [ 'lineinfo', 'percent' ],
       \              [ 'fileformat', 'fileencoding', 'filetype' ] ]
       \ },
@@ -193,10 +193,10 @@ let g:jsx_ext_required = 0
 " Short cut for exit vim
 nmap <silent> qq :q!<CR>
 nmap <silent> wq :wq<CR>
-nmap <silent> w :w<CR>
+nmap <silent> ww :w<CR>
 vmap <silent> qq :q!<CR>
 vmap <silent> wq :wq<CR>
-vmap <silent> w :w<CR>
+vmap <silent> ww :w<CR>
 
 " Auto close bracket
 inoremap " ""<left>
@@ -213,3 +213,6 @@ nnoremap <Right> :vertical resize -2<CR>
 
 " Apply config
 nnoremap <silent> rr :source ~/.config/nvim/init.vim<CR>
+
+" Ranger config
+nmap <C-e> :Ranger<CR>
