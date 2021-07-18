@@ -37,3 +37,8 @@ endif
 if filereadable(expand("~/.config/nvim/closetag.vim"))
   source ~/.config/nvim/closetag.vim
 endif
+
+" EasyAlign configuration
+if filereadable(expand("~/.config/nvim/easy_align.vim"))
+  source ~/.config/nvim/easy_align.vim
+endif

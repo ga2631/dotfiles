@@ -1,3 +1,6 @@
+set encoding=utf8
+set guifont=DroidSansMono_Nerd_Font:h11
+
 filetype plugin indent on
 
 nnoremap <silent> ww :w<CR>
