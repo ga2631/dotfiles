@@ -1,6 +1,14 @@
 env:
   TERM: xterm-256color
 
+# Shell custom
+shell:
+  program: /bin/zsh
+  args:
+    - -l
+    - -c
+    - "tmux attach || tmux"
+
 # Window Customization
 window:
   dimensions:
@@ -20,13 +28,13 @@ window.dynamic_title: true
 # Font Customization
 font:
   normal:
-    family: Menlo
+    family: "Hack Nerd Font"
     style: Regular
   bold:
-    family: Menlo
+    family: "Hack Nerd Font"
     style: Bold
   italic:
-    family: Menlo
+    family: "Hack Nerd Font"
     style: Italic
   size: 10
   offset:
