@@ -1,64 +1,39 @@
-filetype plugin indent on
-
+" Plugin configuration
 if filereadable(expand("~/.config/nvim/bundles.vim"))
   source ~/.config/nvim/bundles.vim
 endif
 
-"==================================================
-" Config shortkey
-"==================================================
-nnoremap <silent> ww :w<CR>
-nnoremap <silent> wq :wq<CR>
-nnoremap <silent> qq :q!<CR>
-nnoremap <silent> rr :source ~/.config/nvim/init.vim<CR>
+" Global configuration
+if filereadable(expand("~/.config/nvim/global.vim"))
+  source ~/.config/nvim/global.vim
+endif
 
-"==================================================
-" Global config
-"==================================================
+" Color schema configuration
+if filereadable(expand("~/.config/nvim/color_schema.vim"))
+  source ~/.config/nvim/color_schema.vim
+endif
 
-" Leader
-let mapleader = " "
+" NERD tree configuration
+if filereadable(expand("~/.config/nvim/nerd_tree.vim"))
+  source ~/.config/nvim/nerd_tree.vim
+endif
 
-set backspace=2   " Backspace deletes like most programs in insert mode
-set nobackup
-set nowritebackup
-set noswapfile
-set history=50
-set ruler         " show the cursor position all the time
-set showcmd       " display incomplete commands
-set incsearch     " do incremental searching
-set laststatus=2  " Always display the status line
-set autoread
-set autowrite     " Automatically :write before running commands
+" Fzf configuration
+if filereadable(expand("~/.config/nvim/fzf.vim"))
+  source ~/.config/nvim/fzf.vim
+endif
+  
+" Lightline configuration
+if filereadable(expand("~/.config/nvim/lightline.vim"))
+  source ~/.config/nvim/lightline.vim
+endif
 
-set smartindent
+" CoC configuration
+if filereadable(expand("~/.config/nvim/coc_extensions.vim"))
+  source ~/.config/nvim/coc_extensions.vim
+endif
 
-" Softtabs, 4 spaces
-set tabstop=4
-set shiftwidth=4
-set shiftround
-set expandtab
-
-" Use one space, not two, after punctuation.
-set nojoinspaces
-
-" Numbers
-set relativenumber
-set number
-set numberwidth=5
-
-" Open new split panes to right and bottom, which feels more natural
-set splitbelow
-set splitright
-
-" Autocomplete with dictionary words when spell check is on
-set complete+=kspell
-
-" Always use vertical diffs
-set diffopt+=vertical
-
-" Copy to clipboard
-set clipboard=unnamedplus
-
-set lazyredraw
-set termguicolors
+" Closetab configuration
+if filereadable(expand("~/.config/nvim/closetag.vim"))
+  source ~/.config/nvim/closetag.vim
+endif
