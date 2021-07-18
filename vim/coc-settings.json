@@ -1,0 +1,33 @@
+{
+  "coc.preferences.formatOnSaveFiletypes": ["*"],
+  "eslint.filetypes": [
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "javascriptreact",
+    "typescript.tsx"
+  ],
+  "coc.preferences.diagnostic.virtualText": true,
+  "diagnostic-languageserver.filetypes": {
+    "php": ["phpcs"]
+  },
+  "diagnostic-languageserver.linters": {
+    "phpcs": {
+      "debounce": 300,
+      "args": ["--report=emacs", "-s", "-"]
+    }
+  },
+  "diagnostic-languageserver.formatFiletypes": {
+    "blade": "blade-formatter",
+    "php": "phpcbf"
+  },
+  "diagnostic-languageserver.formatters": {
+    "phpcbf": {
+      "command": "./vendor/bin/phpcbf",
+      "rootPatterns": ["composer.json", "composer.lock", "vendor", ".git"],
+      "args": ["%file"],
+      "isStdout": false,
+      "doesWriteToFile": true
+    }
+  }
+}
