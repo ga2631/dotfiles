@@ -78,7 +78,7 @@ colors:
     white: "0xffffff"
 
 key_bindings:
-  - { key: N, mods: Control, action: SpawnNewInstance }
+  - { key: N, mods: Control|Shift, action: SpawnNewInstance }
 
 # Live config reload (changes require restart)
 live_config_reload: true

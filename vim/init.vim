@@ -190,20 +190,9 @@ let g:closetag_filenames = '*.html,*.js,*.jsx,*.vue'
 let g:closetag_emptyTags_caseSensitive = 1
 let g:jsx_ext_required = 0
 
-" Short cut for exit vim
-nmap <silent> qq :q!<CR>
-nmap <silent> wq :wq<CR>
-nmap <silent> ww :w<CR>
-vmap <silent> qq :q!<CR>
-vmap <silent> wq :wq<CR>
-vmap <silent> ww :w<CR>
-
-" Auto close bracket
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
+"
+nnoremap <silent> ww :w<CR>
+nnoremap <silent> wq :wq<CR>
 
 " Resize panel
 nnoremap <Up> :resize +2<CR> 

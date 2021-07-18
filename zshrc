@@ -45,3 +45,4 @@ alias tmux='tmux -2'
 
 export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
+export PATH="/usr/local/opt/node@14/bin:$PATH"
