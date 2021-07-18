@@ -20,17 +20,14 @@ set ruler         " show the cursor position all the time
 set showcmd       " display incomplete commands
 set incsearch     " do incremental searching
 set laststatus=2  " Always display the status line
+set autoread
 set autowrite     " Automatically :write before running commands
 
-set autoindent
 set smartindent
 
-set autoread
-set autowrite
-
-" Softtabs, 2 spaces
-set tabstop=2
-set shiftwidth=2
+" Softtabs, 4 spaces
+set tabstop=4
+set shiftwidth=4
 set shiftround
 set expandtab
 
@@ -193,15 +190,7 @@ let g:jsx_ext_required = 0
 "
 nnoremap <silent> ww :w<CR>
 nnoremap <silent> wq :wq<CR>
-
-" Resize panel
-nnoremap <Up> :resize +2<CR> 
-nnoremap <Down> :resize -2<CR>
-nnoremap <Left> :vertical resize +2<CR>
-nnoremap <Right> :vertical resize -2<CR>
+nnoremap <silent> ee :Ranger<CR>
 
 " Apply config
 nnoremap <silent> rr :source ~/.config/nvim/init.vim<CR>
-
-" Ranger config
-nmap <C-e> :Ranger<CR>
