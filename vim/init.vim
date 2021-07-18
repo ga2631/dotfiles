@@ -42,3 +42,8 @@ endif
 if filereadable(expand("~/.config/nvim/easy_align.vim"))
   source ~/.config/nvim/easy_align.vim
 endif
+
+" Blamer configuration
+if filereadable(expand("~/.config/nvim/blamer.vim"))
+  source ~/.config/nvim/blamer.vim
+endif
