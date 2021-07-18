@@ -15,5 +15,6 @@ Plug 'junegunn/vim-easy-align'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'ryanoasis/vim-devicons'
 Plug 'APZelos/blamer.nvim'
+Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 
 call plug#end()

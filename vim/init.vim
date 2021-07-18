@@ -47,3 +47,8 @@ endif
 if filereadable(expand("~/.config/nvim/blamer.vim"))
   source ~/.config/nvim/blamer.vim
 endif
+
+" Doge configuration
+if filereadable(expand("~/.config/nvim/doge.vim"))
+  source ~/.config/nvim/doge.vim
+endif
