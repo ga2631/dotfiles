@@ -1,14 +1,6 @@
 env:
   TERM: xterm-256color
 
-# Shell custom
-shell:
-  program: /bin/zsh
-  args:
-    - -l
-    - -c
-    - "tmux attach || tmux"
-
 # Window Customization
 window:
   dimensions:
