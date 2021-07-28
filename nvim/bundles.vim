@@ -19,5 +19,6 @@ Plug 'APZelos/blamer.nvim'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'mhinz/vim-signify'
 Plug 'jiangmiao/auto-pairs'
+Plug 'alvan/vim-closetag'
 
 call plug#end()
