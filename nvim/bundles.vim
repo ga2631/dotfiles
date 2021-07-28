@@ -18,5 +18,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'APZelos/blamer.nvim'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'mhinz/vim-signify'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
