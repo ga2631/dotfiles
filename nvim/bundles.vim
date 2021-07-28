@@ -20,5 +20,6 @@ Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
 Plug 'mhinz/vim-signify'
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
+Plug 'yggdroot/indentline'
 
 call plug#end()

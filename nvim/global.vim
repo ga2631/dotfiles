@@ -15,17 +15,12 @@ set nowrap                " Wrapping sucks (except on markdown)
 autocmd BufRead,BufNewFile *.md,*.txt setlocal wrap " DO wrap on markdown files
 
 set mouse=a               " Enable mouse on all modes
+set cursorline
 
 set showmatch
 set termguicolors
 
-set list lcs=tab:\¦\      "(here is a space)
-let &t_SI = "\e[6 q"      " Make cursor a line in insert
-let &t_EI = "\e[2 q"      " Make cursor a line in insert
-
 " Leader
-let mapleader = " "
-
 set backspace=2   " Backspace deletes like most programs in insert mode
 set nobackup
 set nowritebackup
