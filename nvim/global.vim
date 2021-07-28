@@ -3,11 +3,6 @@ set guifont=DroidSansMono_Nerd_Font:h11
 
 filetype plugin indent on
 
-nnoremap <silent> ww :w<CR>
-nnoremap <silent> wq :wq<CR>
-nnoremap <silent> qq :q!<CR>
-nnoremap <silent> rr :source ~/.config/nvim/init.vim<CR>
-nnoremap <silent> cc :nohl<CR>
 
 set nocompatible
 set hlsearch              " Highlight search results
@@ -83,6 +78,13 @@ nnoremap <Down> :echoe "Use j"<CR>
 
 nnoremap <Leader>\ :vsplit<CR>
 nnoremap <Leader>/ :split<CR>
+
+nnoremap <silent> ww :w<CR>
+nnoremap <silent> wq :wq<CR>
+nnoremap <silent> qq :q!<CR>
+nnoremap <silent> rr :source ~/.config/nvim/init.vim<CR>
+nnoremap <silent> J :+20<CR>
+nnoremap <silent> K :-20<CR>
 
 " Autocomand to remember las editing position
 augroup vimrc-remember-cursor-position
