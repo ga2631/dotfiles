@@ -7,6 +7,7 @@ nnoremap <silent> ww :w<CR>
 nnoremap <silent> wq :wq<CR>
 nnoremap <silent> qq :q!<CR>
 nnoremap <silent> rr :source ~/.config/nvim/init.vim<CR>
+nnoremap <silent> cc :nohl<CR>
 
 set nocompatible
 set hlsearch              " Highlight search results
