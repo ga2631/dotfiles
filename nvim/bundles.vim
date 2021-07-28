@@ -17,5 +17,6 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'ryanoasis/vim-devicons'
 Plug 'APZelos/blamer.nvim'
 Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
+Plug 'mhinz/vim-signify'
 
 call plug#end()

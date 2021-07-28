@@ -52,3 +52,8 @@ endif
 if filereadable(expand("~/.config/nvim/doge.vim"))
   source ~/.config/nvim/doge.vim
 endif
+
+" Indent guides configuration
+if filereadable(expand("~/.config/nvim/indent_guides.vim"))
+  source ~/.config/nvim/indent_guides.vim
+endif
