@@ -1,5 +1,4 @@
-set encoding=utf8
-set guifont=DroidSansMono_Nerd_Font:h11
+set guifont=Hack\ Nerd\ Font:h10
 
 filetype plugin indent on
 
@@ -62,7 +61,11 @@ set diffopt+=vertical
 " copy to clipboard
 set clipboard=unnamed,unnamedplus
 
-set lazyredraw
+set undodir=~/.vim/undodir
+set undofile
+
+" copy to clipboard
+set clipboard=unnamed,unnamedplus
 
 " get off my lawn
 nnoremap <left> :echoe "use h"<cr>
@@ -70,14 +73,21 @@ nnoremap <right> :echoe "use l"<cr>
 nnoremap <up> :echoe "use k"<cr>
 nnoremap <down> :echoe "use j"<cr>
 
+" Mapping hot key
+let mapleader = " "
+
 nnoremap <leader>\ :vsplit<cr>
 nnoremap <leader>/ :split<cr>
+nnoremap <leader>h :wincmd h<CR>
+nnoremap <leader>j :wincmd j<CR>
+nnoremap <leader>k :wincmd k<CR>
+nnoremap <leader>l :wincmd l<CR>
 
 nnoremap <silent> ww :w<cr>
 nnoremap <silent> wq :wq<cr>
 nnoremap <silent> qq :q!<cr>
 nnoremap <silent> cc :nohl<cr>
-nnoremap <silent> rr :source ~/.config/nvim/init.vim<cr>
+nnoremap <silent> rr :source ~/.vim/init.vim<cr>
 nnoremap <silent> J :+20<cr>
 nnoremap <silent> K :-20<cr>
 

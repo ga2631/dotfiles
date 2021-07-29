@@ -1,0 +1,19 @@
+let g:coc_global_extensions = [
+  \ 'coc-css',
+  \ 'coc-diagnostic',
+  \ 'coc-flutter',
+  \ 'coc-html',
+  \ 'coc-html-css-support',
+  \ 'coc-json',
+  \ 'coc-markdownlint',
+  \ 'coc-phpls',
+  \ 'coc-prettier',
+  \ 'coc-python',
+  \ 'coc-sh',
+  \ 'coc-sql',
+  \ 'coc-swagger',
+  \ 'coc-tsserver',
+  \ 'coc-vetur',
+  \ 'coc-xml',
+  \ 'coc-yaml'
+  \ ]
