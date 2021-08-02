@@ -75,8 +75,6 @@ nnoremap <up> :echoe "use k"<CR>
 nnoremap <down> :echoe "use j"<CR>
 
 " Mapping hot key
-let mapleader = " "
-
 nnoremap <leader>\ :vsplit<CR>
 nnoremap <leader>/ :split<CR>
 nnoremap <leader>h :wincmd h<CR>
@@ -88,7 +86,7 @@ nnoremap <silent> ww :w<cr>
 nnoremap <silent> wq :wq<CR>
 nnoremap <silent> qq :q!<CR>
 nnoremap <silent> cc :let @/ = ""<CR>
-nnoremap <silent> rr :source ~/.vim/init.vim<CR>
+nnoremap <silent> rr :source ~/.config/nvim/init.vim<CR>
 nnoremap <silent> J :+20<CR>
 nnoremap <silent> K :-20<CR>
 

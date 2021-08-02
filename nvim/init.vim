@@ -43,9 +43,14 @@ if filereadable(expand("~/.config/nvim/blamer.vim"))
   source ~/.config/nvim/blamer.vim
 endif
 
-" Indent line jonfiguration
+" Indent line configuration
 if filereadable(expand("~/.config/nvim/indentline.vim"))
   source ~/.config/nvim/indentline.vim
+endif
+
+" float_term configuration
+if filereadable(expand("~/.config/nvim/float_term.vim"))
+  source ~/.config/nvim/float_term.vim
 endif
 
 
