@@ -48,4 +48,9 @@ if filereadable(expand("~/.vim/coc.vim"))
   source ~/.vim/coc.vim
 endif
 
+" float term configuration
+if filereadable(expand("~/.vim/float_term.vim"))
+  source ~/.vim/float_term.vim
+endif
+
 

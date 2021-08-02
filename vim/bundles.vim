@@ -13,5 +13,6 @@ Plug 'yggdroot/indentline'
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'voldikss/vim-floaterm'
 
 call plug#end()
