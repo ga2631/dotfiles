@@ -38,22 +38,14 @@ if filereadable(expand("~/.config/nvim/closetag.vim"))
   source ~/.config/nvim/closetag.vim
 endif
 
-" EasyAlign configuration
-if filereadable(expand("~/.config/nvim/easy_align.vim"))
-  source ~/.config/nvim/easy_align.vim
-endif
-
 " Blamer configuration
 if filereadable(expand("~/.config/nvim/blamer.vim"))
   source ~/.config/nvim/blamer.vim
-endif
-
-" Doge configuration
-if filereadable(expand("~/.config/nvim/doge.vim"))
-  source ~/.config/nvim/doge.vim
 endif
 
 " Indent line jonfiguration
 if filereadable(expand("~/.config/nvim/indentline.vim"))
   source ~/.config/nvim/indentline.vim
 endif
+
+
