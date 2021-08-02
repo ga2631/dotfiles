@@ -62,27 +62,39 @@ set diffopt+=vertical
 " copy to clipboard
 set clipboard=unnamed,unnamedplus
 
-set lazyredraw
+set undodir=~/.vim/undodir
+set undofile
+
+" copy to clipboard
+set clipboard=unnamed,unnamedplus
 
 " get off my lawn
-nnoremap <left> :echoe "use h"<cr>
-nnoremap <right> :echoe "use l"<cr>
-nnoremap <up> :echoe "use k"<cr>
-nnoremap <down> :echoe "use j"<cr>
+nnoremap <left> :echoe "use h"<CR>
+nnoremap <right> :echoe "use l"<CR>
+nnoremap <up> :echoe "use k"<CR>
+nnoremap <down> :echoe "use j"<CR>
 
-nnoremap <leader>\ :vsplit<cr>
-nnoremap <leader>/ :split<cr>
+" Mapping hot key
+let mapleader = " "
+
+nnoremap <leader>\ :vsplit<CR>
+nnoremap <leader>/ :split<CR>
+nnoremap <leader>h :wincmd h<CR>
+nnoremap <leader>j :wincmd j<CR>
+nnoremap <leader>k :wincmd k<CR>
+nnoremap <leader>l :wincmd l<CR>
 
 nnoremap <silent> ww :w<cr>
-nnoremap <silent> wq :wq<cr>
-nnoremap <silent> qq :q!<cr>
-nnoremap <silent> cc :nohl<cr>
-nnoremap <silent> rr :source ~/.config/nvim/init.vim<cr>
-nnoremap <silent> J :+20<cr>
-nnoremap <silent> K :-20<cr>
+nnoremap <silent> wq :wq<CR>
+nnoremap <silent> qq :q!<CR>
+nnoremap <silent> cc :let @/ = ""<CR>
+nnoremap <silent> rr :source ~/.vim/init.vim<CR>
+nnoremap <silent> J :+20<CR>
+nnoremap <silent> K :-20<CR>
 
 " Autocomand to remember las editing position
 augroup vimrc-remember-cursor-position
   autocmd!
   autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 augroup END
+
