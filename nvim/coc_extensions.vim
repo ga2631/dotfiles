@@ -15,5 +15,6 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver',
   \ 'coc-vetur',
   \ 'coc-xml',
-  \ 'coc-yaml'
+  \ 'coc-yaml',
+  \ 'coc-swagger'
   \ ]
